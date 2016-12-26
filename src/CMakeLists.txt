@@ -1,0 +1,20 @@
+include_directories(../include)
+
+add_executable(
+    psc
+    ../include/pascal_simple_compiler_lex.h
+    ../include/pascal_simple_compiler_yacc.h
+    ../include/pascal_debug_program.h
+    ../include/pascal_handle_quaternion.h
+    ../include/pascal_handle_semantics.h
+    ../include/pascal_handle_symbol_table.h
+    ../include/pascal_handle_syntax_tree.h
+    pascal_simple_compiler_lex.c
+    pascal_simple_compiler_yacc.c
+    pascal_debug_program.c
+    pascal_handle_quaternion.c
+    pascal_handle_semantics.c
+    pascal_handle_symbol_table.c
+    pascal_handle_syntax_tree.c
+    pascal_simple_compiler.c
+)
