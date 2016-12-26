@@ -2,13 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "pascal_simple_compiler_lex.h"
-#include "pascal_simple_compiler_yacc.h"
-#include "pascal_handle_semantics.h"
-#include "pascal_handle_symbol_table.h"
-#include "pascal_handle_quaternion.h"
-#include "pascal_handle_syntax_tree.h"
-#include "pascal_debug_program.h"
+#include <pascal_simple_compiler_lex.h>
+#include <pascal_simple_compiler_yacc.h>
+#include <pascal_handle_semantics.h>
+#include <pascal_handle_symbol_table.h>
+#include <pascal_handle_quaternion.h>
+#include <pascal_handle_syntax_tree.h>
+#include <pascal_debug_program.h>
 
 #define YYERROR_VERBOSE
 
@@ -277,7 +277,7 @@ Statement
         $$->ast_node = $1->ast_node;
     }
     | {
-        printf("");
+        printf(" ");
     }
 CompoundStatement
     : STATEMENT_BEGIN StatementSemicoln STATEMENT_END {

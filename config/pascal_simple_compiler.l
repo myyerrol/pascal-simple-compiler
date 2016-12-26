@@ -1,7 +1,7 @@
 %option noyywrap yylineno
 
 %{
-#include "pascal_simple_compiler_yacc.h"
+#include <pascal_simple_compiler_yacc.h>
 %}
 
 LETTER [A-Za-z_]

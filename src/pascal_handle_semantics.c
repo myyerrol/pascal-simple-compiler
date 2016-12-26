@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "pascal_handle_semantics.h"
-#include "pascal_handle_symbol_table.h"
-#include "pascal_handle_quaternion.h"
-#include "pascal_handle_syntax_tree.h"
-#include "pascal_debug_program.h"
+#include <pascal_handle_semantics.h>
+#include <pascal_handle_symbol_table.h>
+#include <pascal_handle_quaternion.h>
+#include <pascal_handle_syntax_tree.h>
+#include <pascal_debug_program.h>
 
 int g_temp_count          = 1;
 int g_true_or_false       = TRUE;

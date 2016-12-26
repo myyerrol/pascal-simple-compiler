@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "pascal_simple_compiler_lex.h"
-#include "pascal_simple_compiler_yacc.h"
+#include <pascal_simple_compiler_lex.h>
+#include <pascal_simple_compiler_yacc.h>
 
 #if 1
 int main(int argc, char **argv)

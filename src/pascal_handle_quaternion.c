@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "pascal_handle_symbol_table.h"
-#include "pascal_handle_quaternion.h"
+#include <pascal_handle_symbol_table.h>
+#include <pascal_handle_quaternion.h>
 
 int g_quaternion_index = 1;
 QuaternionTableNode *g_quaternion_head_node, *g_quaternion_tail_node;
 
 void createQuaternionNode(void)
 {
-    g_quaternion_head_node = 
+    g_quaternion_head_node =
         (QuaternionTableNode *)malloc(sizeof(QuaternionTableNode));
-    g_quaternion_head_node->quaternion = 
+    g_quaternion_head_node->quaternion =
         (QuaternionTable *)malloc(sizeof(QuaternionTable));
 
     g_quaternion_tail_node = g_quaternion_head_node;
@@ -142,7 +142,7 @@ int generateQuaternionNode(int argument_a, int argument_b, int result,
                            int opcode)
 {
     QuaternionTableNode *quaternion_new_node;
-    quaternion_new_node = 
+    quaternion_new_node =
         (QuaternionTableNode *)malloc(sizeof(QuaternionTableNode));
     quaternion_new_node->quaternion =
         (QuaternionTable *)malloc(sizeof(QuaternionTable));

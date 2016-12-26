@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "pascal_handle_syntax_tree.h"
+#include <pascal_handle_syntax_tree.h>
 
 #if 0
 int main(void)
@@ -23,7 +23,7 @@ int main(void)
         (AbstractSyntaxTreeNode **)malloc(sizeof(AbstractSyntaxTreeNode));
     ast_test_node_g =
         (AbstractSyntaxTreeNode **)malloc(sizeof(AbstractSyntaxTreeNode));
-    
+
     createSyntaxTreeNode(ast_test_node_a);
     createSyntaxTreeNode(ast_test_node_b);
     createSyntaxTreeNode(ast_test_node_c);

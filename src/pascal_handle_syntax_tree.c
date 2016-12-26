@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "pascal_handle_syntax_tree.h"
+#include <pascal_handle_syntax_tree.h>
 
 int g_st_queue_index = 1;
 struct SyntaxTreeQueueNode *g_st_queue_head_node, *g_st_queue_tail_node;
@@ -29,7 +29,7 @@ void printAbstractSyntaxTreeNode(AbstractSyntaxTreeNode *ast_node)
                     st_queue_temp_node->st_node->son;
             }
             else {
-                st_queue_temp_node->st_node = 
+                st_queue_temp_node->st_node =
                     st_queue_temp_node->st_node->brother;
                 current++;
                 continue;
@@ -189,7 +189,7 @@ struct SyntaxTreeNode *st_brother_node)
     }
 }
 
-int getSyntaxTreeSonNode(struct SyntaxTreeNode *st_parent_node, 
+int getSyntaxTreeSonNode(struct SyntaxTreeNode *st_parent_node,
 struct SyntaxTreeNode **st_son_node)
 {
     if (st_parent_node != NULL && st_son_node != NULL) {
@@ -233,7 +233,7 @@ struct SyntaxTreeQueueNode *getSyntaxTreeQueueNode(int index)
             return st_queue_temp_node;
         }
     }
-    
+
     return NULL;
 }
 

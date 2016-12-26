@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "pascal_handle_symbol_table.h"
+#include <pascal_handle_symbol_table.h>
 
 #if 0
 int main(void)

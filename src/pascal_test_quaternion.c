@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "pascal_handle_symbol_table.h"
-#include "pascal_handle_quaternion.h"
+#include <pascal_handle_symbol_table.h>
+#include <pascal_handle_quaternion.h>
 
 #if 0
 int main(void)

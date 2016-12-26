@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "pascal_handle_symbol_table.h"
+#include <pascal_handle_symbol_table.h>
 
 int g_constant_index = 1;
 int g_variable_index = -1;

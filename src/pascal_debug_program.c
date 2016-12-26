@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "pascal_debug_program.h"
-#include "pascal_handle_symbol_table.h"
-#include "pascal_handle_quaternion.h"
-#include "pascal_handle_syntax_tree.h"
+#include <pascal_debug_program.h>
+#include <pascal_handle_symbol_table.h>
+#include <pascal_handle_quaternion.h>
+#include <pascal_handle_syntax_tree.h>
 
 void printConstantInformation(void)
 {
