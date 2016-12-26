@@ -1,5 +1,8 @@
 # Build directory
 build/
 
-# CMake
+# CMake file
 CMakeLists.txt.user
+
+# Yacc file
+*.output
