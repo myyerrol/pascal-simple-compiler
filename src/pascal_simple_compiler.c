@@ -15,6 +15,10 @@ int main(int argc, char **argv)
             return 0;
         }
     }
+    else {
+        printf("Error, not file!\n");
+        return 0;
+    }
 #endif
 
 #if 0
