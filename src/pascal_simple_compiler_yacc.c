@@ -1,8 +1,8 @@
-/* A Bison parser, made by GNU Bison 3.0.2.  */
+/* A Bison parser, made by GNU Bison 3.0.4.  */
 
 /* Bison implementation for Yacc-like parsers in C
 
-   Copyright (C) 1984, 1989-1990, 2000-2013 Free Software Foundation, Inc.
+   Copyright (C) 1984, 1989-1990, 2000-2015 Free Software Foundation, Inc.
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@
 #define YYBISON 1
 
 /* Bison version.  */
-#define YYBISON_VERSION "3.0.2"
+#define YYBISON_VERSION "3.0.4"
 
 /* Skeleton name.  */
 #define YYSKELETON_NAME "yacc.c"
@@ -161,7 +161,7 @@ extern int yydebug;
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef union YYSTYPE YYSTYPE;
+
 union YYSTYPE
 {
 #line 24 "config/pascal_simple_compiler.y" /* yacc.c:355  */
@@ -179,6 +179,8 @@ union YYSTYPE
 
 #line 181 "src/pascal_simple_compiler_yacc.c" /* yacc.c:355  */
 };
+
+typedef union YYSTYPE YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
@@ -192,7 +194,7 @@ int yyparse (void);
 
 /* Copy the second part of user declarations.  */
 
-#line 196 "src/pascal_simple_compiler_yacc.c" /* yacc.c:358  */
+#line 198 "src/pascal_simple_compiler_yacc.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -1348,7 +1350,7 @@ yyreduce:
         deleteVariableNode();
         deleteSyntaxTreeNode();
     }
-#line 1352 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1354 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 3:
@@ -1362,7 +1364,7 @@ yyreduce:
         addSyntaxTreeSonNode(*((yyval.statement)->ast_node), *((yyvsp[-1].statement)->ast_node));
         addSyntaxTreeSonNode(*((yyval.statement)->ast_node), *((yyvsp[0].statement)->ast_node));
     }
-#line 1366 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1368 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 4:
@@ -1372,7 +1374,7 @@ yyreduce:
         (yyval.statement)->chain = (yyvsp[-1].statement)->chain;
         (yyval.statement)->ast_node = (yyvsp[-1].statement)->ast_node;
     }
-#line 1376 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1378 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 5:
@@ -1386,7 +1388,7 @@ yyreduce:
         addSyntaxTreeSonNode(*((yyval.statement)->ast_node), *((yyvsp[-2].statement)->ast_node));
         addSyntaxTreeSonNode(*((yyval.statement)->ast_node), *((yyvsp[0].statement)->ast_node));
     }
-#line 1390 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1392 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 6:
@@ -1399,7 +1401,7 @@ yyreduce:
         setSyntaxTreeNode(*((yyval.statement)->ast_node), NODE_DEFINITION, "definition");
         addSyntaxTreeSonNode(*((yyval.statement)->ast_node), *((yyvsp[0].statement)->ast_node));
     }
-#line 1403 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1405 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 7:
@@ -1429,7 +1431,7 @@ yyreduce:
         addSyntaxTreeSonNode(*((yyval.statement)->ast_node), *ast_type_node);
         printDebugVariableInformation();
     }
-#line 1433 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1435 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 8:
@@ -1437,7 +1439,7 @@ yyreduce:
     {
         (yyval.type) = TYPE_INTEGER;
     }
-#line 1441 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1443 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 9:
@@ -1445,7 +1447,7 @@ yyreduce:
     {
         (yyval.type) = TYPE_REAL;
     }
-#line 1449 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1451 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 10:
@@ -1471,7 +1473,7 @@ yyreduce:
         (yyval.variable_list)->ast_node = (yyvsp[-2].variable_list)->ast_node;
         printDebugVariableInformation();
     }
-#line 1475 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1477 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 11:
@@ -1486,7 +1488,7 @@ yyreduce:
         addSyntaxTreeSonNode(*((yyval.variable_list)->ast_node), *((yyvsp[0].variable)->ast_node));
         printDebugVariableInformation();
     }
-#line 1490 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1492 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 12:
@@ -1497,7 +1499,7 @@ yyreduce:
         addSyntaxTreeSonNode(*((yyvsp[-1].statement)->ast_node), *((yyvsp[0].statement)->ast_node));
         (yyval.statement)->ast_node = (yyvsp[-1].statement)->ast_node;
     }
-#line 1501 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1503 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 13:
@@ -1510,7 +1512,7 @@ yyreduce:
         setSyntaxTreeNode(*((yyval.statement)->ast_node), NODE_STATEMENT, "statement");
         addSyntaxTreeSonNode(*((yyval.statement)->ast_node), *((yyvsp[0].statement)->ast_node));
     }
-#line 1514 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1516 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 14:
@@ -1522,7 +1524,7 @@ yyreduce:
         (yyval.statement)->ast_node = (yyvsp[-1].statement)->ast_node;
         printDebugQuaternionInformation();
     }
-#line 1526 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1528 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 15:
@@ -1532,7 +1534,7 @@ yyreduce:
         (yyval.statement)->chain = 0;
         (yyval.statement)->ast_node = (yyvsp[0].statement)->ast_node;
     }
-#line 1536 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1538 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 16:
@@ -1545,7 +1547,7 @@ yyreduce:
         printDebugQuaternionInformation();
         g_true_or_false_if = TRUE;
     }
-#line 1549 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1551 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 17:
@@ -1558,7 +1560,7 @@ yyreduce:
         printDebugQuaternionInformation();
         g_true_or_false_if = TRUE;
     }
-#line 1562 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1564 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 18:
@@ -1573,7 +1575,7 @@ yyreduce:
         printDebugQuaternionInformation();
         g_true_or_false_while = TRUE;
     }
-#line 1577 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1579 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 19:
@@ -1583,7 +1585,7 @@ yyreduce:
         (yyval.statement)->chain = (yyvsp[0].statement)->chain;
         (yyval.statement)->ast_node = (yyvsp[0].statement)->ast_node;
     }
-#line 1587 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1589 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 20:
@@ -1591,7 +1593,7 @@ yyreduce:
     {
         printf(" ");
     }
-#line 1595 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1597 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 21:
@@ -1601,7 +1603,7 @@ yyreduce:
         (yyval.statement)->chain = (yyvsp[-1].statement)->chain;
         (yyval.statement)->ast_node = (yyvsp[-1].statement)->ast_node;
     }
-#line 1605 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1607 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 22:
@@ -1632,7 +1634,7 @@ yyreduce:
         addSyntaxTreeSonNode(*((yyval.statement)->ast_node), *((yyvsp[0].expression)->ast_node));
         printDebugInformation();
     }
-#line 1636 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1638 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 23:
@@ -1648,7 +1650,7 @@ yyreduce:
         printDebugQuaternionInformation();
         g_true_or_false_if = (g_true_or_false_if) ? FALSE : TRUE;
     }
-#line 1652 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1654 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 24:
@@ -1664,7 +1666,7 @@ yyreduce:
         printDebugQuaternionInformation();
         g_true_or_false_if = g_true_or_false;
     }
-#line 1668 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1670 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 25:
@@ -1681,7 +1683,7 @@ yyreduce:
         printDebugQuaternionInformation();
         g_true_or_false_while = g_true_or_false;
     }
-#line 1685 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1687 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 26:
@@ -1692,7 +1694,7 @@ yyreduce:
         (yyval.while_statement)->loop_start = g_quaternion_index;
         printDebugQuaternionInformation();
     }
-#line 1696 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1698 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 27:
@@ -1701,7 +1703,7 @@ yyreduce:
         (yyval.expression) = performArithmeticOperation((yyvsp[-2].expression), (yyvsp[0].expression), OPCODE_ADD, NODE_ADD, "+");
         printDebugInformation();
     }
-#line 1705 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1707 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 28:
@@ -1710,7 +1712,7 @@ yyreduce:
         (yyval.expression) = performArithmeticOperation((yyvsp[-2].expression), (yyvsp[0].expression), OPCODE_SUB, NODE_SUB, "-");
         printDebugInformation();
     }
-#line 1714 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1716 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 29:
@@ -1719,7 +1721,7 @@ yyreduce:
         (yyval.expression) = performArithmeticOperation((yyvsp[-2].expression), (yyvsp[0].expression), OPCODE_MUL, NODE_MUL, "*");
         printDebugInformation();
     }
-#line 1723 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1725 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 30:
@@ -1728,7 +1730,7 @@ yyreduce:
         (yyval.expression) = performArithmeticOperation((yyvsp[-2].expression), (yyvsp[0].expression), OPCODE_DIV, NODE_DIV, "/");
         printDebugInformation();
     }
-#line 1732 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1734 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 31:
@@ -1736,7 +1738,7 @@ yyreduce:
     {
         (yyval.expression) = (yyvsp[-1].expression);
     }
-#line 1740 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1742 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 32:
@@ -1773,7 +1775,7 @@ yyreduce:
         addSyntaxTreeSonNode(*((yyval.expression)->ast_node), *((yyvsp[0].expression)->ast_node));
         printDebugInformation();
     }
-#line 1777 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1779 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 33:
@@ -1796,7 +1798,7 @@ yyreduce:
         (yyval.expression)->index_quaternion = 0;
         (yyval.expression)->ast_node = (yyvsp[0].variable)->ast_node;
     }
-#line 1800 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1802 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 34:
@@ -1810,7 +1812,7 @@ yyreduce:
         (yyval.expression)->index_quaternion = 0;
         (yyval.expression)->ast_node = (yyvsp[0].constant)->ast_node;
     }
-#line 1814 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1816 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 35:
@@ -1842,7 +1844,7 @@ yyreduce:
         addSyntaxTreeSonNode(*((yyval.bool_expression)->ast_node), *((yyvsp[0].expression)->ast_node));
         printDebugQuaternionInformation();
     }
-#line 1846 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1848 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 36:
@@ -1856,7 +1858,7 @@ yyreduce:
         (yyval.bool_expression)->ast_node = (yyvsp[-1].bool_expression)->ast_node;
         printDebugQuaternionInformation();
     }
-#line 1860 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1862 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 37:
@@ -1870,7 +1872,7 @@ yyreduce:
         (yyval.bool_expression)->ast_node = (yyvsp[-1].bool_expression)->ast_node;
         printDebugQuaternionInformation();
     }
-#line 1874 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1876 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 38:
@@ -1885,7 +1887,7 @@ yyreduce:
         addSyntaxTreeSonNode(*((yyval.bool_expression)->ast_node), *((yyvsp[0].bool_expression)->ast_node));
         printDebugQuaternionInformation();
     }
-#line 1889 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1891 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 39:
@@ -1897,7 +1899,7 @@ yyreduce:
         (yyval.bool_expression)->ast_node = (yyvsp[-1].bool_expression)->ast_node;
         printDebugQuaternionInformation();
     }
-#line 1901 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1903 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 40:
@@ -1912,7 +1914,7 @@ yyreduce:
         addSyntaxTreeSonNode(*((yyval.bool_expression)->ast_node), *((yyvsp[-1].bool_expression)->ast_node));
         printDebugQuaternionInformation();
     }
-#line 1916 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1918 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 41:
@@ -1927,7 +1929,7 @@ yyreduce:
         addSyntaxTreeSonNode(*((yyval.bool_expression)->ast_node), *((yyvsp[-1].bool_expression)->ast_node));
         printDebugQuaternionInformation();
     }
-#line 1931 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1933 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 42:
@@ -1971,7 +1973,7 @@ yyreduce:
         setSyntaxTreeNode(*((yyval.variable)->ast_node), NODE_VARIABLE, (yyvsp[0].string));
         printDebugVariableInformation();
     }
-#line 1975 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1977 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 43:
@@ -1987,7 +1989,7 @@ yyreduce:
         setSyntaxTreeNode(*((yyval.constant)->ast_node), NODE_INTEGER, (yyvsp[0].string));
         printDebugConstantInformation();
     }
-#line 1991 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 1993 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 44:
@@ -2003,7 +2005,7 @@ yyreduce:
         setSyntaxTreeNode(*((yyval.constant)->ast_node), NODE_REAL, (yyvsp[0].string));
         printDebugConstantInformation();
     }
-#line 2007 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 2009 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 45:
@@ -2014,7 +2016,7 @@ yyreduce:
         (yyval.relation_operator)->type_opcode = OPCODE_JLT;
         (yyval.relation_operator)->value       = "<";
     }
-#line 2018 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 2020 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 46:
@@ -2025,7 +2027,7 @@ yyreduce:
         (yyval.relation_operator)->type_opcode = OPCODE_JGT;
         (yyval.relation_operator)->value       = ">";
     }
-#line 2029 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 2031 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 47:
@@ -2036,7 +2038,7 @@ yyreduce:
         (yyval.relation_operator)->type_opcode = OPCODE_JLE;
         (yyval.relation_operator)->value       = "<=";
     }
-#line 2040 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 2042 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 48:
@@ -2047,7 +2049,7 @@ yyreduce:
         (yyval.relation_operator)->type_opcode = OPCODE_JGE;
         (yyval.relation_operator)->value       = ">=";
     }
-#line 2051 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 2053 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 49:
@@ -2058,7 +2060,7 @@ yyreduce:
         (yyval.relation_operator)->type_opcode = OPCODE_JEQ;
         (yyval.relation_operator)->value       = "=";
     }
-#line 2062 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 2064 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
   case 50:
@@ -2069,11 +2071,11 @@ yyreduce:
         (yyval.relation_operator)->type_opcode = OPCODE_JNE;
         (yyval.relation_operator)->value       = "<>";
     }
-#line 2073 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 2075 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
     break;
 
 
-#line 2077 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
+#line 2079 "src/pascal_simple_compiler_yacc.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
