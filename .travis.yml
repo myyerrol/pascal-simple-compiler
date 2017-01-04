@@ -2,8 +2,8 @@ language: c
 
 compiler: gcc
 
-before_scrpts:
+before_script:
     - mkdir ./build
 
-scripts:
+script:
     - sh build.sh
