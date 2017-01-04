@@ -2,6 +2,8 @@ language: c
 
 compiler: gcc
 
-install: cmake
+before_scrpts:
+    - mkdir ./build
 
-scripts: cmake
+scripts:
+    - sh build.sh
