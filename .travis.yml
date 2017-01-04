@@ -2,4 +2,6 @@ language: c
 
 compiler: gcc
 
+install: cmake
+
 scripts: ./build.sh
