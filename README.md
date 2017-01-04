@@ -1,6 +1,6 @@
 # pascal_simple_compiler
 
-[![Build Status](https://travis-ci.org/myyerrol/pascal_simple_compiler.svg?branch=master)](https://travis-ci.org/myyerrol/pascal_simple_compiler)
+[![Build Status](https://travis-ci.org/myyerrol/pascal_simple_compiler.svg?branch=master)](https://travis-ci.org/myyerrol/pascal_simple_compiler) [![GPL](https://img.shields.io/badge/license-GPL-blue.svg)](./LICENSE)
 
 ## Description
 This is the experimental project of compile principle. It implements lexical and syntax analysis, generate intermediate codes for optimization and generating assembly in the future.
@@ -46,6 +46,3 @@ $> psc pascal_test_program_while_if.pas
 
 ## Summary
 Although the compiler maybe has some unknown bugs or its function has not strong enough yet at now, with developing, it will become more and more better in the fucture.
-
-## License
-[GPL-3.0](./LICENSE)
