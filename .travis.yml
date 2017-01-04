@@ -3,7 +3,8 @@ language: c
 compiler: gcc
 
 before_script:
-    - mkdir ./build
+    - sh build.sh
 
 script:
-    - sh build.sh
+    - export PROGRAM=./build/bin/psc
+    - ${PROGRAM} test/pascal_test_program_while_if.pas
