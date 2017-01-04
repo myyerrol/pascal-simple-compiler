@@ -4,4 +4,4 @@ compiler: gcc
 
 install: cmake
 
-scripts: ./build.sh
+scripts: cmake
