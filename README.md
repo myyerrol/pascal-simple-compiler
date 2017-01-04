@@ -48,4 +48,4 @@ $> psc pascal_test_program_while_if.pas
 Although the compiler maybe has some unknown bugs or its function has not strong enough yet at now, with developing, it will become more and more better in the fucture.
 
 ## License
-[GPL-3.0](./LICENSE) License.
+[GPL-3.0](./LICENSE)
