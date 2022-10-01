@@ -149,7 +149,7 @@ int setSyntaxTreeNode(struct SyntaxTreeNode *st_node, int type, char *value)
 }
 
 int addSyntaxTreeSonNode(struct SyntaxTreeNode *st_parent_node,
-struct SyntaxTreeNode *st_son_node)
+                         struct SyntaxTreeNode *st_son_node)
 {
     if (st_parent_node != NULL && st_son_node != NULL) {
         if (st_parent_node->son == NULL) {
@@ -171,7 +171,7 @@ struct SyntaxTreeNode *st_son_node)
 }
 
 int addSyntaxTreeBrotherNode(struct SyntaxTreeNode *st_current_node,
-struct SyntaxTreeNode *st_brother_node)
+                             struct SyntaxTreeNode *st_brother_node)
 {
     if (st_current_node != NULL && st_brother_node != NULL) {
         struct SyntaxTreeNode *temp_node = NULL;
@@ -190,7 +190,7 @@ struct SyntaxTreeNode *st_brother_node)
 }
 
 int getSyntaxTreeSonNode(struct SyntaxTreeNode *st_parent_node,
-struct SyntaxTreeNode **st_son_node)
+                         struct SyntaxTreeNode **st_son_node)
 {
     if (st_parent_node != NULL && st_son_node != NULL) {
         *st_son_node = st_parent_node->son;
@@ -202,7 +202,7 @@ struct SyntaxTreeNode **st_son_node)
 }
 
 int getSyntaxTreeBrotherNode(struct SyntaxTreeNode *st_current_node,
-struct SyntaxTreeNode **st_brother_node)
+                             struct SyntaxTreeNode **st_brother_node)
 {
     if (st_current_node != NULL && st_brother_node != NULL) {
         *st_brother_node = st_current_node->brother;
