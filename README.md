@@ -1,6 +1,6 @@
-# pascal_simple_compiler
+# pascal-simple-compiler
 
-[![Build Status](https://travis-ci.org/myyerrol/pascal_simple_compiler.svg?branch=master)](https://travis-ci.org/myyerrol/pascal_simple_compiler) [![GPL](https://img.shields.io/badge/license-GPL-blue.svg)](./LICENSE)
+[![GPL](https://img.shields.io/badge/license-GPL-blue.svg)](./LICENSE)
 
 ## Description
 This is the experimental project of compile principle. It implements lexical and syntax analysis, generate intermediate codes for optimization and generating assembly in the future.
@@ -12,33 +12,33 @@ This is the experimental project of compile principle. It implements lexical and
 *   GCC
 
 ## Configuration
-Download the **pascal_simple_compiler** repository:
+Download the **pascal-simple-compiler** repository:
 ```bash
 $> cd ~/Desktop
-$> git clone https://github.com/myyerrol/pascal_simple_compiler.git
+$> git clone https://github.com/myyerrol/pascal-simple-compiler.git
 ```
 Execute the **build.sh** script:
 ```bash
-$> cd pascal_simple_compiler
+$> cd pascal-simple-compiler
 $> sudo ./build.sh
 ```
 
 ## Usage
 If you use the default **bash**, using following commands:
 ```bash
-$> cd ~/Desktop/pascal_simple_compiler
+$> cd ~/Desktop/pascal-simple-compiler
 $> echo "export PATH=`pwd`/build/bin:\${PATH}" >> ~/.bashrc
 $> source ~/.bashrc
 ```
 
 If you use the **zsh** or other **shell**, modifying the **.bashrc** to **.zshrc** or the configuration file that corresponding to your **shell**. such as:
 ```bash
-$> cd ~/Desktop/pascal_simple_compiler
+$> cd ~/Desktop/pascal-simple-compiler
 $> echo "export PATH=`pwd`/build/bin:\${PATH}" >> ~/{your shell configuration file}
 $> source ~/{your shell configuration file}
 ```
 
-Test the **pascal_simple_compiler**, such as:
+Test the **pascal-simple-compiler**, such as:
 ```bash
 $> cd test
 $> psc pascal_test_program_while_if.pas
